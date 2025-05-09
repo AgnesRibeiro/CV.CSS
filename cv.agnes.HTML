@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currículo de Agnes Ribeiro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      background: linear-gradient(to right, #e0eafc, #dfcff3);
+      font-family: 'Segoe UI', sans-serif;
+      padding: 40px;
+    }
+
+    .container {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(50, 2, 128, 0.1);
+    }
+
+    .photo {
+      max-width: 160px;
+      border-radius: 50%;
+      border: 4px solid #450797;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      color: #976db9;
+      margin-top: 20px;
+    }
+
+    .btn-custom {
+      background-color: #3e026e;
+      color: rgb(121, 67, 153);
+      transition: 0.3s;
+    }
+
+    .btn-custom:hover {
+      background-color: #f8f8f8;
+    }
+
+    form {
+      margin-top: 50px;
+    }
+
+    input, textarea, select {
+      margin-bottom: 15px;
+    }
+
+    .section-title {
+      border-bottom: 2px solid #46254b;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="text-center">
+      <img src="fotoperfil.jpg" class="photo">
+      <h1>Agnes Ribeiro</h1>
+      <p><strong>Área:</strong> Desenvolvedora e Analista de Sistemas</p>
+      <p><strong>Email:</strong> agnesleticiastar@gmail.com</p>
+      <p><strong>Telefone:</strong> (81) 98231-8744 - (81) 98463-0139</p>
+      <!-- Links para GitHub e LinkedIn -->
+      <p><strong>GitHub:</strong> <a href="https://github.com/AgnesRibeiro" target="_blank">AgnesRibeiro</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/agnes-ribeiro-6446392ab/" target="_blank">Agnes Ribeiro</a></p>
+    </div>
+
+    <h2 class="section-title">Formação</h2>
+    <ul>
+      <li>Análise e Desenvolvimento de Sistemas (ADS) – Em andamento | Faculdade Senac</li>
+      <li>Ensino Médio – Concluído em 2023 | Escola Rosa de Magalhães Melo</li>
+    </ul>
+
+    <h2 class="section-title">Habilidades</h2>
+    <ul>
+      <li>Linguagens de Programação: C# (.NET Core), JavaScript, TypeScript</li>
+      <li>Banco de Dados: SQL Server, MySQL, PostgreSQL</li>
+      <li>Desenvolvimento Web: HTML, CSS, JSON, XML, jQuery</li>
+      <li>Versionamento de Código: Git, GitFlow</li>
+    </ul>
+
+    <h2 class="section-title">Competências Comportamentais</h2>
+    <ul>
+      <li>Comunicação clara e objetiva</li>
+      <li>Trabalho em equipe e colaboração</li>
+      <li>Proatividade e iniciativa para resolução de problemas</li>
+      <li>Facilidade de aprendizado e adaptabilidade</li>
+    </ul>
+
+    <h2 class="section-title">Idiomas</h2>
+    <ul>
+      <li>Português - Nativo</li>
+      <li>Inglês - Intermediário (em desenvolvimento)</li>
+    </ul>
+
+    <h2 class="section-title">Experiências Profissionais</h2>
+    <ul>
+      <li><strong>Atendente de Teleserviços</strong> – Datametrica | 04/2024 – 01/2025</li>
+      <li><strong>Montagem e Manutenção de Micros</strong> – ENNET</li>
+    </ul>
+
+    <h2 class="section-title">Objetivo</h2>
+    <p>Desenvolvedora iniciante com uma base teórica robusta e um desejo genuíno de mergulhar no mundo do desenvolvimento. Busco ativamente minhas primeiras oportunidades como freelancer para aplicar os conhecimentos adquiridos na faculdade em projetos práticos e desafiadores. Tenho grande interesse em integrar colaborações pontuais, onde possa contribuir com minhas habilidades técnicas e aprender com profissionais experientes.</p>
+
+    <div class="text-center mt-4">
+      <a href="#formulario" class="btn btn-custom">Acessar Formulário</a>
+    </div>
+
+    <form id="formulario" class="mt-5">
+      <h2 class="section-title">Formulário de Contato</h2>
+
+      <fieldset class="mb-4">
+        <legend>Dados Pessoais</legend>
+
+        <div class="form-group">
+          <label>Nome</label>
+          <input type="text" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label>Sobrenome</label>
+          <input type="text" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label>Telefone para contato</label>
+          <input type="tel" class="form-control" id="telefone" placeholder="(00) 00000-0000" required>
+        </div>
+
+        <div class="form-group">
+          <label>E-mail</label>
+          <input type="email" class="form-control" placeholder="seuemail@exemplo.com" required>
+        </div>
+      </fieldset>
+
+      <fieldset class="mb-4">
+        <legend>Preferências</legend>
+
+        <div class="form-group">
+          <label>Deixe sua mensagem</label>
+          <textarea class="form-control" rows="3" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Idioma</label>
+          <select class="form-select">
+            <option>Português (pt-br)</option>
+            <option>Inglês</option>
+            <option>Espanhol</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Protótipo (PDF, DOC, DOCX, JPEG, PNG)</label>
+          <input type="file" class="form-control" accept=".pdf,.doc,.docx,.jpeg,.jpg,.png">
+        </div>
+
+        <div class="form-group">
+          <label>Linguagem Preferida</label>
+          <select class="form-select" multiple>
+            <option>Java</option>
+            <option>C++</option>
+            <option>PHP</option>
+            <option>C#</option>
+            <option>Python</option>
+            <option>JavaScript</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Banco de Dados</label><br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="bd" value="MySQL" checked>
+            <label class="form-check-label">MySQL</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="bd" value="PostgreSQL">
+            <label class="form-check-label">PostgreSQL</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="bd" value="MongoDB">
+            <label class="form-check-label">MongoDB</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Turno para Reuniões</label><br>
+          <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input">
+            <label class="form-check-label">Manhã</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input">
+            <label class="form-check-label">Tarde</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input">
+            <label class="form-check-label">Noite</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Sugira um Horário</label>
+          <input type="time" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label>Data Prevista Que deseja a Entrega *</label>
+          <input type="date" class="form-control" required>
+        </div>
+      </fieldset>
+
+      <button type="submit" class="btn btn-success">Enviar</button>
+      <button type="reset" class="btn btn-secondary">Limpar</button>
+    </form>
+  </div>
+</body>
+</html>
